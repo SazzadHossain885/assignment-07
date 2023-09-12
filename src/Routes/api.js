@@ -40,7 +40,7 @@ router.get('/product/update', productController.update);
 
 // Undefined Routes
 router.get("*", (req, res) => {
-    res.status(200).json({ status: 'success', data: '404 not found' });
+    res.status(404).json({ status: 'success', data: '404 not found' });
 })
 
 module.exports = router;
